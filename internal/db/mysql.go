@@ -9,7 +9,7 @@ import (
 var DB *sql.DB // global DB variable
 
 func InitDB() {
-    dsn := "root:User!@tcp(127.0.0.1:3306)/goexperiment_db"
+    dsn := "root:yourpassword@tcp(127.0.0.1:3306)/goexperiment_db"
     var err error
     DB, err = sql.Open("mysql", dsn)
     if err != nil {
